@@ -1,1 +1,35 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 1em;
+    text-align: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    transition: background-color 0.3s; /* Transición suave */
+}
 
+header.scrolled {
+    background-color: #222; /* Color de fondo al hacer scroll */
+}
+body {
+    font-family: 'Consolas', monospace; /* Tipografía Consolas */
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color del texto */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+header {
+    animation: bounce 1s; /* Aplica la animación al cargar */
+}
