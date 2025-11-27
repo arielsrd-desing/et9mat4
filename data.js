@@ -30,7 +30,7 @@ const secciones = [
 	],
 	nodales: [
 		"Límite de funciones",
-		"Indeterminaciones",
+		"Indeterminaciones"
 	],
 	evaluaciones: "Del 1 al 15 de julio",
 	trabajos: "15 de julio",
@@ -41,7 +41,7 @@ const secciones = [
 	titulo: "Tercer Bimestre",
 	contenidos: [
 		"Derivadas",
-		"Aplicaciones de la derivada",
+		"Aplicaciones de la derivada"
 	],
 	nodales: [
 		"Lectura e interpretación de gráficos",
@@ -58,7 +58,7 @@ const secciones = [
 	titulo: "Cuarto Bimestre",
 	contenidos: [
 		"Integrales",
-		"Aplicaciones de las integrales",
+		"Aplicaciones de las integrales"
 	],
 	nodales: [
 		"Fórmulas de figuras geométricas y cuerpos",
