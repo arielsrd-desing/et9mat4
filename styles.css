@@ -1,35 +1,189 @@
-header {
-    position: sticky;
-    top: 0;
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 1em;
-    text-align: center;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    transition: background-color 0.3s; /* Transición suave */
+/* Estilo vintage tipo consola / Unix / terminal */
+
+:root {
+--bg-dark: #0d0f0f;
+--bg-panel: #111414;
+--green-neon: #00ff88;
+--green-dim: #0aff6c;
+--text-light: #d4ffd9;
+--border-glow: 0 0 8px rgba(0, 255, 136, 0.6);
 }
 
-header.scrolled {
-    background-color: #222; /* Color de fondo al hacer scroll */
-}
+
 body {
-    font-family: 'Consolas', monospace; /* Tipografía Consolas */
-    background-color: #f4f4f4; /* Color de fondo */
-    color: #333; /* Color del texto */
+margin: 0;
+font-family: "Courier New", Courier, monospace;
+background-color: var(--bg-dark);
+color: var(--text-light);
+padding-bottom: 50px;
 }
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
+/* HEADER PEGADO */
+.header-sticky {
+position: sticky;
+top: 0;
+z-index: 10;
+background: var(--bg-dark);
+padding: 20px;
+border-bottom: 2px solid var(--green-neon);
+box-shadow: var(--border-glow);
 }
 
 header {
-    animation: bounce 1s; /* Aplica la animación al cargar */
+  position: relative;
+}
+
+/* Logo */
+.school-logo {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 80px;      /* Ajusta según el tamaño real del logo */
+  height: auto;
+  filter: drop-shadow(0 0 4px #00ff99);
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.school-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.main-title {
+margin: 0;
+font-size: 42px;
+color: var(--green-neon);
+text-shadow: 0 0 5px var(--green-neon);
+}
+
+
+.main-desc {
+margin: 5px 0 0;
+color: var(--green-dim);
+}
+
+
+/* BLOQUES */
+.bloque {
+background: var(--bg-panel);
+margin: 25px;
+padding: 20px;
+border: 2px solid var(--green-neon);
+border-radius: 6px;
+box-shadow: var(--border-glow);
+transition: transform 0.15s ease-in-out;
+}
+
+
+.bloque:hover {
+transform: scale(1.01);
+}
+
+
+.bloque h2 {
+margin-top: 0;
+color: var(--green-dim);
+text-shadow: 0 0 4px var(--green-neon);
+}
+
+
+/* CONTENIDO DE CADA BLOQUE */
+.contenido {
+padding-left: 10px;
+border-left: 2px dashed var(--green-dim);
+}
+
+
+/* LINKS TIPO TERMINAL */
+a {
+color: var(--green-neon);
+text-decoration: none;
+}
+
+
+a:hover {
+text-decoration: underline;
+}
+
+
+/* ANIMACIÓN SUAVE DE PARPADEO (ESTILO CURSOR) */
+@keyframes blink {
+0%, 50% { opacity: 1; }
+50.1%, 100% { opacity: 0.4; }
+}
+
+
+.cursor {
+animation: blink 1s infinite;
+}
+
+
+.main-nav {
+  margin-top: 15px;
+  border-top: 2px solid #00ff99;
+  border-bottom: 2px solid #00ff99;
+  padding: 10px 0;
+  background: #0a0f0a;
+  box-shadow: 0 0 8px #00ff99;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #00ff99;
+  font-family: "Courier New", monospace;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.main-nav a:hover {
+  background: rgba(0, 255, 153, 0.15);
+  box-shadow: 0 0 6px #00ff99;
+}
+
+
+.grade-block {
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 2px solid #00ff99;
+  border-radius: 10px;
+  background: #0a0f0a;
+  box-shadow: 0 0 6px #00ff99;
+}
+
+.grade-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Courier New", monospace;
+  color: #00ff99;
+}
+
+.grade-table th,
+.grade-table td {
+  border: 1px solid #00ff99;
+  padding: 8px;
+  text-align: left;
+}
+
+.grade-table th {
+  background: rgba(0, 255, 153, 0.15);
+}
+
+.grade-table tr:hover {
+  background: rgba(0, 255, 153, 0.1);
+}
+
+
+.bloque {
+  scroll-margin-top: 190px; /* Ajustá según necesites */
 }
