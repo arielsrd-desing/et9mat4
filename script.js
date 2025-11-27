@@ -1,3 +1,13 @@
+/* script.js - Inserta dinámicamente los datos del curso en el HTML */
+
+document.addEventListener("DOMContentLoaded", () => {
+if (!secciones || !Array.isArray(secciones)) {
+console.error("No se encontró el arreglo 'secciones' o no es válido.");
+return;
+}
+
+
+secciones.forEach(sec => {
 const bloque = document.getElementById(sec.id);
 if (!bloque) return;
 
