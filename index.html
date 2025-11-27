@@ -1,140 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Matemáticas</title>
-    <style>
-        /* Estilos CSS básicos para la apariencia */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .bimestre {
-            margin: 1em;
-            padding: 1em;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #333;
-        }
-        .contenido, .evaluaciones, .trabajos {
-            margin-bottom: 1em;
-        }
-        img {
-            max-width: 100%; /* Para que las imágenes se ajusten al ancho de la pantalla */
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 0.5em;
-        }
-        a {
-            color: #007bff; /* Color para los enlaces */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        /* Estilos para dispositivos móviles */
-        @media (max-width: 600px) {
-            .bimestre {
-                margin: 0.5em;
-                padding: 0.8em;
-            }
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ET9 MAT4</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header class="header-sticky">
+<h1 class="main-title">Escuela Técnica N°9 D.E.7 Ing. Huergo</h1>
+<img src="images/et9-logo.png" alt=" " class="school-logo" />
+<p class="main-desc">Espacio para el estudiante. Recursos académicos y novedades</p>
+<p class="main-desc"><b>Curso: 4° 3° Electricidad</b>. Profesor: Ruiz Diaz Ariel. E-mail: arielsebastian.ruiz@bue.edu.ar</p>
+<nav class="main-nav">
+  <ul>
+    <li><a href="#b1">1° Bimestre</a></li>
+    <li><a href="#b2">2° Bimestre</a></li>
+    <li><a href="#b3">3° Bimestre</a></li>
+    <li><a href="#b4">4° Bimestre</a></li>
+    <li><a href="#recuperacion">Recuperación</a></li>
+    <li><a href="#calificaciones">Calificaciones</a></li>
+  </ul>
+</nav>
+</header>
 
-    <header>
-        <h1>Curso de Matemáticas</h1>
-        <p>¡Bienvenido al curso de matemáticas! Aquí encontrarás todo lo necesario para tu aprendizaje.</p>
-    </header>
 
-    <section class="bimestre">
-        <h2>Primer Bimestre</h2>
-        <div class="contenido">
-            <h3>Contenidos</h3>
-            <p>Aquí irá la descripción de los contenidos del primer bimestre. Por ejemplo: Números naturales, operaciones básicas, etc.</p>
-        </div>
-        <div class="evaluaciones">
-            <h3>Fechas de Evaluaciones</h3>
-            <p>Fecha de la primera evaluación: 15 de marzo.</p>
-        </div>
-        <div class="trabajos">
-            <h3>Trabajos Prácticos</h3>
-            <p>TP1: Resolver los ejercicios de la página 20 del libro.</p>
-        </div>
-        <!-- Puedes agregar imágenes y enlaces a videos aquí -->
-        <img src="imagen1.jpg" alt="Imagen relacionada con el contenido">
-        <a href="#" target="_blank">Video de YouTube sobre el tema</a>
-    </section>
+<main>
+<section id="b1" class="bloque">
+<h2>Primer Bimestre</h2>
+<div class="contenido"></div>
+<a href="docs/mat4_tp1.pdf" download class="download-btn">
+  Descargar PDF de TP
+</a>
+</section>
 
-    <section class="bimestre">
-        <h2>Segundo Bimestre</h2>
-        <div class="contenido">
-            <h3>Contenidos</h3>
-            <p>Aquí irá la descripción de los contenidos del segundo bimestre. Por ejemplo: Ecuaciones, geometría básica, etc.</p>
-        </div>
-        <div class="evaluaciones">
-            <h3>Fechas de Evaluaciones</h3>
-            <p>Fecha de la primera evaluación: 20 de mayo.</p>
-        </div>
-        <div class="trabajos">
-            <h3>Trabajos Prácticos</h3>
-            <p>TP2: Resolver los problemas de la página 35 del libro.</p>
-        </div>
-        <!-- Puedes agregar imágenes y enlaces a videos aquí -->
-        <img src="imagen2.jpg" alt="Imagen relacionada con el contenido">
-        <a href="#" target="_blank">Video de YouTube sobre el tema</a>
-    </section>
+<section id="b2" class="bloque">
+<h2>Segundo Bimestre</h2>
+<div class="contenido"></div>
+</section>
 
-    <section class="bimestre">
-        <h2>Tercer Bimestre</h2>
-        <div class="contenido">
-            <h3>Contenidos</h3>
-            <p>Aquí irá la descripción de los contenidos del tercer bimestre. Por ejemplo: Funciones, trigonometría, etc.</p>
-        </div>
-        <div class="evaluaciones">
-            <h3>Fechas de Evaluaciones</h3>
-            <p>Fecha de la primera evaluación: 15 de agosto.</p>
-        </div>
-        <div class="trabajos">
-            <h3>Trabajos Prácticos</h3>
-            <p>TP3: Resolver los ejercicios de la página 50 del libro.</p>
-        </div>
-        <!-- Puedes agregar imágenes y enlaces a videos aquí -->
-        <img src="imagen3.jpg" alt="Imagen relacionada con el contenido">
-        <a href="#" target="_blank">Video de YouTube sobre el tema</a>
-    </section>
+<section id="b3" class="bloque">
+<h2>Tercer Bimestre</h2>
+<div class="contenido"></div>
+</section>
 
-    <section class="bimestre">
-        <h2>Cuarto Bimestre</h2>
-        <div class="contenido">
-            <h3>Contenidos</h3>
-            <p>Aquí irá la descripción de los contenidos del cuarto bimestre. Por ejemplo: Estadística, probabilidad, etc.</p>
-        </div>
-        <div class="evaluaciones">
-            <h3>Fechas de Evaluaciones</h3>
-            <p>Fecha de la primera evaluación: 20 de octubre.</p>
-        </div>
-        <div class="trabajos">
-            <h3>Trabajos Prácticos</h3>
-            <p>TP4: Resolver los problemas de la página 65 del libro.</p>
-        </div>
-        <!-- Puedes agregar imágenes y enlaces a videos aquí -->
-        <img src="imagen4.jpg" alt="Imagen relacionada con el contenido">
-        <a href="#" target="_blank">Video de YouTube sobre el tema</a>
-    </section>
+<section id="b4" class="bloque">
+<h2>Cuarto Bimestre</h2>
+<div class="contenido"></div>
+</section>
 
+<section id="recuperacion" class="bloque">
+<h2>Período de Recuperación</h2>
+<div class="contenido"></div>
+</section>
+</main>
+
+<section id="calificaciones">
+  <h2>Calificaciones</h2>
+  <div id="grades-container"></div>
+</section>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
