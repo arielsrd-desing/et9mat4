@@ -96,21 +96,18 @@ const secciones = [
 
 const calificaciones = {
   primer: [
-    { nombre: "Alumno 1", nota: 6, obs: "Buen desempeño" },
-    { nombre: "Alumno 2", nota: 10, obs: "Excelente trabajo" },
-    { nombre: "Alumno 3", nota: 6, obs: "Puede mejorar" }
+    { nombre: "Alumno", nota: 0, obs: "..." }
   ],
   segundo: [
-    { nombre: "Alumno 1", nota: 9, obs: "Muy bien" },
-    { nombre: "Alumno 2", nota: 7, obs: "Regular" }
+    { nombre: "Alumno", nota: 0, obs: "..." }
   ],
   tercer: [
-    { nombre: "Alumno 1", nota: 10, obs: "Excelente" }
+    { nombre: "Alumno", nota: 0, obs: "..." }
   ],
   cuarto: [
-    { nombre: "Alumno 1", nota: 5, obs: "Debe reforzar contenidos" }
+    { nombre: "Alumno", nota: 0, obs: "..." }
   ],
   recuperacion: [
-    { nombre: "Alumno 3", nota: 8, obs: "Recuperó satisfactoriamente" }
+    { nombre: "Alumno", nota: 0, obs: "..." }
   ]
 };
