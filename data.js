@@ -4,19 +4,18 @@ const secciones = [
 	id: "b1",
 	titulo: "Primer Bimestre",
 	contenidos: [
-		"Números reales y complejos",
-		"Operaciones en forma polar y exponencial",
-		"Funciones y curvas en el espacio",
-		"Funciones trigonométricas",
-		"Límites y continuidad"
+		"Repaso y fundamentos",
+		"Funciones",
+		"Sucesiones y límites",
+		"Continuidad"
 	],
 	nodales: [
 		"Función",
 		"Sistemas de ecuaciones y polinomios",
 		"Límite"
 	],
-	evaluaciones: "Del 1 al 10 de mayo",
-	trabajos: "10 de mayo",
+	evaluaciones: "Del 29 de abril al 6 de mayo",
+	trabajos: "6 de mayo",
 	video: "https://www.youtube.com/watch?v=ojiMGOqwwCE"
 },
 {
@@ -26,11 +25,12 @@ const secciones = [
 		"Límites y continuidad",
 		"Continuidad de funciones",
 		"Asíntotas",
-		"Recta tangente"
+		"Introducción a la derivada",
+		"Repaso de números complejos"
 	],
 	nodales: [
 		"Límite de funciones",
-		"Indeterminaciones"
+		"Continuidad"
 	],
 	evaluaciones: "Del 1 al 15 de julio",
 	trabajos: "15 de julio",
@@ -47,6 +47,7 @@ const secciones = [
 		"Lectura e interpretación de gráficos",
 		"Reconocimiento de patrones",
 		"Problemas con fórmulas",
+		"Problemas de optimización",
 		"Conceptos de geometría analítica"
 	],
 	evaluaciones: "Del 20 al 30 de septiembre",
@@ -61,10 +62,8 @@ const secciones = [
 		"Aplicaciones de las integrales"
 	],
 	nodales: [
-		"Fórmulas de figuras geométricas y cuerpos",
 		"Cálculo de área y volúmen en problemas reales",
-		"Ecuaciones de la recta",
-		"Ecuación de la circunferencia",
+		"Rapidez instantánea, velocidad, aceleración y jerk",
 		"Ecuación del plano",
 		"Ecuación de la esfera"
 	],
